@@ -24,4 +24,4 @@ ENV MANAGE_LOCAL_SOLR=true
 ENV MANAGE_EMBEDDED_CASSANDRA=true
 ENV MANAGE_LOCAL_ELASTICSEARCH=false
 
-ENTRYPOINT ["/apache-atlas-1.0.0/bin/atlas_start.py"]
+CMD ["/bin/bash", "-c", "/apache-atlas-1.0.0/bin/atlas_start.py; tail -fF /apache-atlas-1.0.0/logs/application.log"]
