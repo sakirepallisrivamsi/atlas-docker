@@ -5,7 +5,7 @@ RUN apk add --no-cache \
     su-exec \
     python
 
-COPY ./apache-atlas-1.0.0-bin-embedded-cassandra-solr.tar.gz /
+ADD https://github.com/michalmiklas/atlas-docker/releases/download/atlas-v1.0.0/apache-atlas-1.0.0-bin-embedded-cassandra-solr.tar.gz /
 
 RUN set -x \
     && cd / \
