@@ -17,7 +17,6 @@ EXPOSE 21000
 
 ENV PATH=$PATH:/apache-atlas-1.0.0
 
-ENV JAVA_HOME=/usr/lib/jvm/java
 ENV ATLAS_SERVER_HEAP="-Xms15360m -Xmx15360m -XX:MaxNewSize=5120m -XX:MetaspaceSize=100M -XX:MaxMetaspaceSize=512m"
 ENV MANAGE_LOCAL_HBASE=false
 ENV MANAGE_LOCAL_SOLR=true
