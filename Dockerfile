@@ -5,7 +5,8 @@ RUN apk add --no-cache \
     su-exec \
     python
 
-ADD https://github.com/michalmiklas/atlas-docker/releases/download/v2.0.0/apache-atlas-2.0.0-bin.tar.gz /
+# ADD https://github.com/michalmiklas/atlas-docker/releases/download/v2.0.0/apache-atlas-2.0.0-bin.tar.gz /
+ADD https://github.com/sakirepallisrivamsi/atlas-docker/releases/download/forked-v2.0.0/apache-atlas-2.0.0-bin.tar.gz /
 
 RUN set -x \
     && cd / \
